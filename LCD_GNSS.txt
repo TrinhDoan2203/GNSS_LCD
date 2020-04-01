@@ -28,7 +28,7 @@ try:
                                         self.fix=array[6]+ ' '
         #                               print(array)
                                 if array[0] == '$GNZDA':
-                                        loc_time=utc.localize(datetime(int(array[4]), int(array[3]), int(array[2]), int(array[1][0:2]), int(ar$
+                                        loc_time=utc.localize(datetime(int(array[4]), int(array[3]), int(array[2]), int(array[1][0:2]), int(array[1][2:4]), int(array[1][4:6])))
                                         #loc_time=utc.localize(datetime(2002, 10, 27, 6, 0, 0))
                                                 #print('ok')
                                         hel = loc_time.astimezone(helsinki)
@@ -36,7 +36,7 @@ try:
                         #               self.fix  = 1
                         #               print(self.time)
                                 if array[0] == '$GNZDA':
-                                        loc_time=utc.localize(datetime(int(array[4]), int(array[3]), int(array[2]), int(array[1][0:2]), int(ar$
+                                        loc_time=utc.localize(datetime(int(array[4]), int(array[3]), int(array[2]), int(array[1][0:2]), int(array[1][2:4]), int(array[1][4:6])))
                                         #loc_time=utc.localize(datetime(2002, 10, 27, 6, 0, 0))
                                                 #print('ok')
                                         hel = loc_time.astimezone(helsinki)

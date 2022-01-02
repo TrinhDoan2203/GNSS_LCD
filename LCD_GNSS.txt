@@ -1,3 +1,4 @@
+#decode GNSS data and write it to test.txt file
 import time
 import serial
 import sys
